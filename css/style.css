@@ -3,6 +3,22 @@ body{
 }
 .top{
     background-color: white;
-    height: 300px;
+    height: 280px;
     width: 100%;
+}
+.bottoni{
+    margin-top: 10%;
+}
+.bottoni button{
+   color: #B91450;
+   background-color: lightslategray;
+}
+.sez_pass{
+    height: 200px;
+    background-color: gray;
+    font-size: 25px;
+    font-weight: bold;
+}
+h3{
+    font-size: 22px;
 }
