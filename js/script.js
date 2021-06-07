@@ -19,7 +19,7 @@ submit.addEventListener("click", function(){
     var ncarrozza = Math.floor((Math.random() * 9) + 1);
     document.getElementById('carrozza').innerHTML = ncarrozza;
 
-    var cp = Math.floor((Math.random() * 90000) + 10000);
+    var cp = Math.floor((Math.random() * 10000) + 90000);
     document.getElementById('codice-cp').innerHTML = cp;
 
     var none = document.getElementById("biglietto");
@@ -31,7 +31,10 @@ submit.addEventListener("click", function(){
 })
 var annulla = document.getElementById('btn-annulla');
 annulla.addEventListener("click", function(){
- 
+    
+    document.getElementById("nome").value = ' ';
+    document.getElementById("km").value = ' ';
+    
     var none3 = document.getElementById("biglietto");
     none3.classList.remove("d-block");
     none3.classList.add("d-none");
@@ -39,6 +42,8 @@ annulla.addEventListener("click", function(){
     var none4 = document.getElementById("titolobiglietto");
     none4.classList.remove("d-block");
     none4.classList.add("d-none");
+
+    
 
 
 })
